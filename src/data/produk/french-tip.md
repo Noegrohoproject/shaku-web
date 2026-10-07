@@ -1,8 +1,8 @@
 ---
-nama: French Tip
+nama: B&W
 ringkasan: desain simple dengan perpaduan warna chrome gold serta asesoris
 foto:
-  - '@assets/produk/Screenshot 2026-09-02 114110.png'
+  - '@assets/produk/IMG_2955.JPG.jpeg'
 harga: 90000
 hargaCoret: null
 bentuk: square
