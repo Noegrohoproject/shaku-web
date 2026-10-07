@@ -11,7 +11,7 @@
 
 backend:
   name: github
-  repo: jokonoegroho/shaku-web
+  repo: Noegrohoproject/shaku-web
   branch: main
   # Masuk pakai token GitHub, bukan tombol "Login with GitHub".
   # Sengaja begitu: cara ini tidak butuh server perantara sama sekali.
