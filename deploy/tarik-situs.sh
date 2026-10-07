@@ -20,9 +20,9 @@ set -u
 # (parameter envlist di RouterOS), jadi berkas ini tidak wajib diubah.
 #
 # Untuk repo publik cukup seperti ini:
-REPO_URL="${REPO_URL:-https://github.com/jokonoegroho/shaku-web.git}"
+REPO_URL="${REPO_URL:-https://github.com/Noegrohoproject/shaku-web.git}"
 # Untuk repo privat, pakai bentuk berikut dan isi tokennya:
-# REPO_URL="https://x-access-token:GANTI_TOKEN@github.com/jokonoegroho/shaku-web.git"
+# REPO_URL="https://x-access-token:TOKEN_ANDA@github.com/Noegrohoproject/shaku-web.git"
 
 BRANCH="${BRANCH:-terbit}"
 # Folder yang dilayani Caddy. Harus cocok dengan nama di Caddyfile.
