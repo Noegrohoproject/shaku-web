@@ -2,7 +2,7 @@
 nama: Noir Matte
 ringkasan: Hitam matte runcing. Untuk yang mau tampil tegas dan berani.
 foto:
-  - '@assets/produk/Screenshot 2026-09-02 113512.png'
+  - '@assets/produk/DSC07436.jpeg'
 harga: 90000
 hargaCoret: null
 bentuk: stiletto
