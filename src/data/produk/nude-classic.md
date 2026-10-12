@@ -2,7 +2,7 @@
 nama: Nude Classic
 ringkasan: Nude hangat yang cocok untuk kerja dan sehari-hari. Netral, tidak mencolok.
 foto:
-  - '@assets/produk/Screenshot 2026-09-02 113732.png'
+  - '@assets/produk/DSC07446.jpeg'
 harga: 75000
 hargaCoret: null
 bentuk: coffin
@@ -13,7 +13,7 @@ warna:
 jumlahKuku: 10
 tersedia: true
 unggulan: true
-urutan: 20
+urutan: 2
 ---
 
 Tampil cantik tanpa perlu buang waktu dan biaya mahal ke salon. Press-on nails kami dirancang khusus menggunakan gel berkualitas tinggi yang tahan lama, reusable (bisa dipakai berulang kali), dan sangat praktis dipasang sendiri dalam kurun waktu kurang dari 10 menit.
