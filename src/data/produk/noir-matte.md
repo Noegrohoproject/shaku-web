@@ -3,8 +3,8 @@ nama: Summer Sparkling
 ringkasan: Peepaduan antara nuansa summer dengan blink blink manja
 foto:
   - '@assets/produk/DSC07457.jpeg'
-harga: 90000
-hargaCoret: null
+harga: 75000
+hargaCoret: 90000
 bentuk: stiletto
 panjang: panjang
 warna:
