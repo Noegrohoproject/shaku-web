@@ -2,7 +2,7 @@
 nama: pastel nails
 ringkasan: desain unik, lucu serta sentuhan warna warna pastel pilihan terbaik nailist kami mengikuti trend yang terkini
 foto:
-  - '@assets/produk/FullSizeRender.jpeg'
+  - '@assets/produk/DSC07514.jpeg'
 harga: 75000
 hargaCoret: 50000
 bentuk: almond
