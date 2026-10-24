@@ -2,7 +2,7 @@
 nama: Ruby Gloss
 ringkasan: Merah pekat dengan kilau tinggi. Pilihan aman untuk acara formal maupun kondangan.
 foto:
-  - '@assets/produk/Screenshot 2026-09-02 113805.png'
+  - '@assets/produk/DSC07501.jpeg'
 harga: 85000
 hargaCoret: 110000
 bentuk: almond
