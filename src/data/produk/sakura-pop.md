@@ -1,15 +1,15 @@
 ---
-nama: Sakura Pop
-ringkasan: Pink pastel dengan aksen bunga kecil. Ceria, ringan, tidak berlebihan.
+nama: Permen kapas
+ringkasan: Perpaduan antara warna pink milky dengan putih membuat kesan kuku simple, cute dan elegant
 foto:
   - '@assets/produk/DSC07504.jpeg'
-harga: 88000
-hargaCoret: 100000
+harga: 40000
+hargaCoret: 55000
 bentuk: round
 panjang: pendek
 warna:
-  - pink
-  - pastel
+  - pink milky
+  - Putih
 jumlahKuku: 10
 tersedia: true
 unggulan: true
