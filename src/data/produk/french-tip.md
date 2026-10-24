@@ -2,7 +2,7 @@
 nama: B&W
 ringkasan: desain simple dengan perpaduan warna chrome gold serta asesoris
 foto:
-  - '@assets/produk/IMG_2955.JPG.jpeg'
+  - '@assets/produk/DSC07489.jpeg'
 harga: 90000
 hargaCoret: null
 bentuk: square
