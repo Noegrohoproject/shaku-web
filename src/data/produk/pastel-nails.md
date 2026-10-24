@@ -1,10 +1,10 @@
 ---
-nama: pastel nails
-ringkasan: desain unik, lucu serta sentuhan warna warna pastel pilihan terbaik nailist kami mengikuti trend yang terkini
+nama: Cat polca
+ringkasan: Desain simple antara perpadauan dengan cat eye elegan dengan cute polca
 foto:
   - '@assets/produk/DSC07514.jpeg'
-harga: 75000
-hargaCoret: 50000
+harga: 60000
+hargaCoret: 45000
 bentuk: almond
 panjang: panjang
 warna:
