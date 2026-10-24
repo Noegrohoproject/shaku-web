@@ -1,6 +1,6 @@
 ---
-nama: RED BUTTERFLY
-ringkasan: desain butterfly dengan sentuhan chrome dipadukan warna red cat eye
+nama: Leo ring
+ringkasan: Desai leopard dengan hiasan silver ring yang membuat kesan semakin keren
 foto:
   - '@assets/produk/DSC07509.jpeg'
 harga: 90000
@@ -8,8 +8,8 @@ hargaCoret: 110000
 bentuk: almond
 panjang: sedang
 warna:
-  - red wine
-  - pink milky
+  - Coklat
+  - Blue
 jumlahKuku: 10
 tersedia: true
 unggulan: true
