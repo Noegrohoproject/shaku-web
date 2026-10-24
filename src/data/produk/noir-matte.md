@@ -1,6 +1,6 @@
 ---
-nama: Noir Matte
-ringkasan: Hitam matte runcing. Untuk yang mau tampil tegas dan berani.
+nama: Summer Sparkling
+ringkasan: Peepaduan antara nuansa summer dengan blink blink manja
 foto:
   - '@assets/produk/DSC07457.jpeg'
 harga: 90000
