@@ -2,7 +2,7 @@
 nama: Nude Classic
 ringkasan: Nude hangat yang cocok untuk kerja dan sehari-hari. Netral, tidak mencolok.
 foto:
-  - '@assets/produk/DSC07446.jpeg'
+  - '@assets/produk/DSC07516.jpeg'
 harga: 75000
 hargaCoret: null
 bentuk: coffin
