@@ -1,6 +1,6 @@
 ---
-nama: B&W
-ringkasan: desain simple dengan perpaduan warna chrome gold serta asesoris
+nama: Candy Blue
+ringkasan: desain simple dengan perpaduan warna biru dan aksen permen  serta asesoris
 foto:
   - '@assets/produk/DSC07489.jpeg'
 harga: 90000
