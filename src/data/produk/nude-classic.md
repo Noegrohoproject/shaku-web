@@ -1,15 +1,15 @@
 ---
-nama: Nude Classic
-ringkasan: Nude hangat yang cocok untuk kerja dan sehari-hari. Netral, tidak mencolok.
+nama: Buterfly era
+ringkasan: Desain minmalis dengan warna soft pink candy sangat cocok di gunakan di berbagai acara
 foto:
   - '@assets/produk/DSC07516.jpeg'
-harga: 75000
-hargaCoret: null
-bentuk: coffin
-panjang: sedang
+harga: 55000
+hargaCoret: 40000
+bentuk: almond
+panjang: pendek
 warna:
-  - nude
-  - cokelat
+  - Pink
+  - Candy
 jumlahKuku: 10
 tersedia: true
 unggulan: true
