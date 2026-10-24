@@ -1,17 +1,19 @@
 ---
-nama: "Sakura Pop"
+nama: Sakura Pop
+ringkasan: Pink pastel dengan aksen bunga kecil. Ceria, ringan, tidak berlebihan.
+foto:
+  - '@assets/produk/DSC07504.jpeg'
 harga: 88000
 hargaCoret: 100000
-bentuk: "round"
-panjang: "pendek"
-warna: ["pink", "pastel"]
+bentuk: round
+panjang: pendek
+warna:
+  - pink
+  - pastel
 jumlahKuku: 10
-foto:
-  - "@assets/produk/sakura-round.jpg"
 tersedia: true
 unggulan: true
 urutan: 60
-ringkasan: "Pink pastel dengan aksen bunga kecil. Ceria, ringan, tidak berlebihan."
 ---
 
 Tampil cantik tanpa perlu buang waktu dan biaya mahal ke salon. Press-on nails kami dirancang khusus menggunakan gel berkualitas tinggi yang tahan lama, reusable (bisa dipakai berulang kali), dan sangat praktis dipasang sendiri dalam kurun waktu kurang dari 10 menit.
