@@ -1,15 +1,15 @@
 ---
-nama: Ruby Gloss
-ringkasan: Merah pekat dengan kilau tinggi. Pilihan aman untuk acara formal maupun kondangan.
+nama: Wedding series
+ringkasan: Cocok buat pengantin dan dan menghadiri acara pesta
 foto:
   - '@assets/produk/DSC07501.jpeg'
-harga: 85000
+harga: 90000
 hargaCoret: 110000
 bentuk: almond
 panjang: sedang
 warna:
-  - merah
-  - glossy
+  - Putih
+  - Gold
 jumlahKuku: 10
 tersedia: true
 unggulan: true
