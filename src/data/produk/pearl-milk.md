@@ -1,15 +1,15 @@
 ---
-nama: Pearl Milk
-ringkasan: Putih susu dengan efek mutiara. Lembut, cocok untuk lamaran dan akad.
+nama: Vertical dilusion
+ringkasan: Desain unik dengan garis vertical sangat cocok untuk old fashion bergaris
 foto:
   - '@assets/produk/DSC07511.jpeg'
-harga: 95000
-hargaCoret: null
-bentuk: oval
+harga: 75000
+hargaCoret: 60000
+bentuk: almond
 panjang: sedang
 warna:
-  - putih
-  - pearl
+  - Nude
+  - Cream
 jumlahKuku: 10
 tersedia: true
 unggulan: true
