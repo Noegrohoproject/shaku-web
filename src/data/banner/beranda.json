@@ -7,16 +7,16 @@
     {
       "nama": "Kuku putih polkadot",
       "aktif": true,
-      "foto": "@assets/banner/polkadot.webp",
-      "fotoHp": "@assets/banner/polkadot-hp.webp",
+      "foto": "@assets/banner/DSC07536.jpeg",
+      "fotoHp": "@assets/banner/DSC07536.jpeg",
       "fokusHpX": 50,
       "fokusHpY": 50
     },
     {
       "nama": "Kuku hitam dengan garis putih",
       "aktif": true,
-      "foto": "@assets/banner/hitam-hp.webp",
-      "fotoHp": "@assets/banner/hitam-hp.webp",
+      "foto": "@assets/banner/DSC07533.jpeg",
+      "fotoHp": "@assets/banner/DSC07533.jpeg",
       "fokusHpX": 50,
       "fokusHpY": 50
     },
