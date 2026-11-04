@@ -1,6 +1,8 @@
 ---
 nama: white summer
 ringkasan: desain simple warna putih milky yang cocok digunakan sehari hari
+foto:
+  - '@assets/produk/IMG_4699.jpeg'
 harga: 70000
 hargaCoret: null
 bentuk: almond
@@ -31,12 +33,9 @@ Pilihan Ukuran (Panjang & Bentuk)
 
 Cara Pemasangan
 
-1.	Bersihkan kuku asli dari minyak/kotoran menggunakan alcohol swab.
-
-2.	Dorong kutikula secara perlahan, lalu kikir halus permukaan kuku asli agar lem menempel sempurna.
-
-3.	Pilih ukuran kuku palsu yang pas, aplikasikan lem secukupnya.
-
-4.	Tempelkan kuku palsu dari arah dasar kutikula, lalu tekan tahan selama 15–30 detik.
+1. Bersihkan kuku asli dari minyak/kotoran menggunakan alcohol swab.
+2. Dorong kutikula secara perlahan, lalu kikir halus permukaan kuku asli agar lem menempel sempurna.
+3. Pilih ukuran kuku palsu yang pas, aplikasikan lem secukupnya.
+4. Tempelkan kuku palsu dari arah dasar kutikula, lalu tekan tahan selama 15–30 detik.
 
 Mau tampil stunning buat acara spesial atau sekadar harian? Yuk, tanyakan ketersediaan desain dan konsultasi ukuran kuku kamu via chat!
