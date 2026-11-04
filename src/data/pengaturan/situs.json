@@ -1,27 +1,27 @@
 {
-  "nama": "SHA.KU",
-  "namaLengkap": "SHA.KU — Press-On Nail by Gorgeousblom.nailart",
-  "subMerek": "By.Gorgeousblom.nailart",
-  "deskripsi": "Press-on nail siap pakai. Kuku cantik dalam hitungan menit, tanpa perlu ke salon.",
-  "whatsapp": "62882005359524",
-  "instagram": "",
-  "tiktok": "",
-  "email": "",
-  "pengumuman": "GRATIS ONGKIR UNTUK SELURUH PULAU JAWA",
   "tampilkanPengumuman": true,
+  "pengumuman": "GRATIS ONGKIR UNTUK SELURUH PULAU JAWA",
+  "nama": "SHA.KU",
+  "subMerek": "By.Gorgeousblom.nailart",
   "menu": {
     "beranda": "Beranda",
-    "katalog": "Katalog",
+    "katalog": "Katalog produk",
     "caraPesan": "Cara Pesan",
     "tentang": "Tentang"
   },
+  "deskripsi": "Press-on nail siap pakai. Kuku cantik dalam hitungan menit, tanpa perlu ke salon.",
   "footer": {
     "jelajahi": "Jelajahi",
     "hubungi": "Hubungi",
     "hakCipta": "Seluruh hak cipta dilindungi."
   },
+  "whatsapp": "62882005359524",
+  "instagram": "",
+  "tiktok": "",
+  "email": "",
   "pesanUmum": "Halo {nama}, saya mau tanya soal produk.",
   "pesanPesan": "Halo {nama}, saya mau pesan \"{produk}\" ({harga}). Apakah masih tersedia?",
   "pesanTerjual": "Halo {nama}, \"{produk}\" sudah terjual. Boleh dibuatkan desain lain untukku?",
-  "labelWa": "Chat WhatsApp"
+  "labelWa": "Chat WhatsApp",
+  "namaLengkap": "SHA.KU — Press-On Nail by Gorgeousblom.nailart"
 }
