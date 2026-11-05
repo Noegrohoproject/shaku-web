@@ -1,6 +1,8 @@
 ---
 nama: choco mint
 ringkasan: desain cat eye dipadukan dengan gradasi warna coklat
+foto:
+  - '@assets/produk/IMG_4712.dng'
 harga: 60000
 hargaCoret: 75000
 bentuk: almond
