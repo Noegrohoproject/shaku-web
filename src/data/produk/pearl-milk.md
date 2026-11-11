@@ -2,9 +2,10 @@
 nama: Vertical dilusion
 ringkasan: Desain unik dengan garis vertical sangat cocok untuk old fashion bergaris
 foto:
-  - '@assets/produk/DSC07511.jpeg'
-harga: 75000
-hargaCoret: 60000
+  - '@assets/produk/IMG_5360.jpeg'
+  - '@assets/produk/IMG_5357.jpeg'
+harga: 80000
+hargaCoret: 95000
 bentuk: almond
 panjang: sedang
 warna:
