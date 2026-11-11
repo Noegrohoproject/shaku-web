@@ -2,14 +2,15 @@
 nama: Candy Blue
 ringkasan: desain simple dengan perpaduan warna biru dan aksen permen  serta asesoris
 foto:
-  - '@assets/produk/DSC07489.jpeg'
-harga: 90000
-hargaCoret: null
+  - '@assets/produk/IMG_5375.jpeg'
+  - '@assets/produk/IMG_5374.jpeg'
+harga: 75000
+hargaCoret: 90000
 bentuk: square
 panjang: pendek
 warna:
-  - putih
-  - bening
+  - Blue
+  - Glass
 jumlahKuku: 10
 tersedia: true
 unggulan: true
