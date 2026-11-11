@@ -2,7 +2,8 @@
 nama: Permen kapas
 ringkasan: Perpaduan antara warna pink milky dengan putih membuat kesan kuku simple, cute dan elegant
 foto:
-  - '@assets/produk/DSC07504.jpeg'
+  - '@assets/produk/IMG_5379.jpeg'
+  - '@assets/produk/IMG_5377.jpeg'
 harga: 40000
 hargaCoret: 55000
 bentuk: round
