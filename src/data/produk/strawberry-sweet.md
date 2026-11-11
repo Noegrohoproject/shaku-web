@@ -4,7 +4,7 @@ ringkasan: Perpaduan anatara warna pink soft cat eye dengan warna merah memberi 
 foto:
   - '@assets/produk/IMG_5364.jpeg'
   - '@assets/produk/IMG_5362.jpeg'
-harga: 55000
+harga: 60000
 hargaCoret: null
 bentuk: almond
 panjang: pendek
