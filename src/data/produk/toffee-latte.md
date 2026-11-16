@@ -8,8 +8,8 @@ panjang: sedang
 warna:
   - coklaat
 jumlahKuku: 10
-tersedia: true
-unggulan: true
+tersedia: false
+unggulan: false
 urutan: 3
 ---
 
