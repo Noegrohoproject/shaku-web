@@ -11,8 +11,8 @@ warna:
   - Pink
   - Candy
 jumlahKuku: 10
-tersedia: true
-unggulan: true
+tersedia: false
+unggulan: false
 urutan: 2
 ---
 
