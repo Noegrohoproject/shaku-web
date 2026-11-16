@@ -10,8 +10,8 @@ panjang: pendek
 warna:
   - mint coklat
 jumlahKuku: 10
-tersedia: true
-unggulan: true
+tersedia: false
+unggulan: false
 urutan: 1
 ---
 
