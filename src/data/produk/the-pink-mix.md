@@ -4,7 +4,7 @@ ringkasan: Desain unik warna pink dengan hiasan cpusan memberi nuansa skena teta
 foto:
   - '@assets/produk/IMG_5353.jpeg'
   - '@assets/produk/IMG_5350.jpeg'
-harga: 95000
+harga: 80000
 hargaCoret: 120000
 bentuk: almond
 panjang: pendek
