@@ -3,7 +3,7 @@ nama: white summer
 ringkasan: desain simple warna putih milky yang cocok digunakan sehari hari
 foto:
   - '@assets/produk/IMG_4699.jpeg'
-harga: 70000
+harga: 60000
 hargaCoret: null
 bentuk: almond
 panjang: sedang
