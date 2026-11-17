@@ -2,7 +2,6 @@
   "judul": "Kuku cantik tanpa ke salon.",
   "jargon": "Sha.ku one of one",
   "subJargon": "A design made only for you",
-  "judulKatalog": "Katalog desain",
   "tautanKatalog": "Lihat katalog →",
   "tampilkanKeunggulan": true,
   "keunggulan": [
@@ -16,11 +15,12 @@
     },
     {
       "judul": "Sepuluh ukuran per set",
-      "isi": "Isi 24 keping dengan sepuluh ukuran berbeda, jadi lebih mudah menemukan yang pas."
+      "isi": "Isi 10 keping dengan sepuluh ukuran berbeda, jadi lebih mudah menemukan yang pas."
     }
   ],
   "tampilkanAjakan": true,
   "ajakanJudul": "Bingung pilih yang mana?",
   "ajakanIsi": "Kirim foto tanganmu lewat WhatsApp, nanti dibantu pilihkan bentuk dan ukuran yang paling pas.",
-  "ajakanTombol": "Chat sekarang"
+  "ajakanTombol": "Chat sekarang",
+  "judulKatalog": "Katalog desain"
 }
