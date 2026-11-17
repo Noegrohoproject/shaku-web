@@ -4,7 +4,7 @@ ringkasan: Desain cantik perpaduan warna olive dan blossom memberi nuansa klasik
 foto:
   - '@assets/produk/IMG_5367.jpeg'
   - '@assets/produk/IMG_5365.jpeg'
-harga: 95000
+harga: 85000
 hargaCoret: 130000
 bentuk: almond
 panjang: sedang
