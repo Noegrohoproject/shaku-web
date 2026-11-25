@@ -433,6 +433,15 @@ collections:
         min: 1
         default: 24
 
+      - label: Available Size
+        name: ukuranTersedia
+        widget: select
+        multiple: true
+        required: false
+        options: [XS, S, M, L]
+        default: [XS, S, M, L]
+        hint: Pilih ukuran yang tersedia untuk produk ini (XS, S, M, L). Kosongkan untuk mengaktifkan semua ukuran.
+
       - label: Stok tersedia
         name: tersedia
         widget: boolean
