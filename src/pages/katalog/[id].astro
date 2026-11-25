@@ -7,6 +7,7 @@ import KartuProduk from '../../components/KartuProduk.astro';
 import { SITUS, formatRupiah, pesanProduk, pesanTerjual, tautanWhatsApp } from '../../konfigurasi';
 import { KATALOG } from '../../konten';
 import FotoBelumTersedia from '../../components/FotoBelumTersedia.astro';
+import SizeChart from '../../components/SizeChart.astro';
 
 export const getStaticPaths = (async () => {
   const produk = await getCollection('produk');
@@ -23,6 +24,8 @@ const diskon =
     : 0;
 
 const waPesan = tautanWhatsApp(pesanProduk(d.nama, d.harga));
+const waDasar = `https://wa.me/${SITUS.whatsapp}?text=`;
+const pesanDasar = pesanProduk(d.nama, d.harga);
 
 // Produk lain untuk bagian rekomendasi di bawah.
 const lainnya = (await getCollection('produk'))
@@ -136,12 +139,20 @@ const skema = {
           </div>
         </dl>
 
+        <SizeChart tersedia={d.tersedia} ukuranTersedia={d.ukuranTersedia} />
+
         {
           d.tersedia ? (
             <a
               href={waPesan}
               rel="noopener"
-              class="tombol mt-8 w-full gap-2 bg-aksen px-8 py-4 text-di-aksen transition-colors hover:bg-aksen-terang"
+              data-tombol-wa
+              data-wa-dasar={waDasar}
+              data-nama-situs={SITUS.nama}
+              data-nama-produk={d.nama}
+              data-harga-produk={formatRupiah(d.harga)}
+              data-pesan-dasar={pesanDasar}
+              class="tombol mt-6 w-full gap-2 bg-aksen px-8 py-4 text-di-aksen transition-colors hover:bg-aksen-terang"
             >
               {KATALOG.pesanTombol}
             </a>
@@ -190,4 +201,58 @@ const skema = {
       </section>
     )
   }
+
+  <script>
+    const tombolUkuran = document.querySelectorAll<HTMLButtonElement>('[data-pilih-ukuran]');
+    const barisUkuran = document.querySelectorAll<HTMLTableRowElement>('[data-baris-ukuran]');
+    const labelTerpilih = document.querySelector<HTMLElement>('[data-ukuran-terpilih]');
+    const tombolWa = document.querySelector<HTMLAnchorElement>('[data-tombol-wa]');
+
+    let ukuranAktif = '';
+
+    function perbaruiTampilanUkuran() {
+      tombolUkuran.forEach((btn) => {
+        const aktif = btn.dataset.pilihUkuran === ukuranAktif;
+        btn.setAttribute('aria-pressed', String(aktif));
+        btn.classList.toggle('bg-aksen', aktif);
+        btn.classList.toggle('text-di-aksen', aktif);
+        btn.classList.toggle('border-aksen', aktif);
+        btn.classList.toggle('bg-latar', !aktif);
+        btn.classList.toggle('text-teks', !aktif);
+        btn.classList.toggle('border-garis', !aktif);
+      });
+
+      barisUkuran.forEach((row) => {
+        const aktif = row.dataset.barisUkuran === ukuranAktif;
+        row.classList.toggle('bg-latar-3', aktif);
+        row.classList.toggle('font-semibold', aktif);
+      });
+
+      if (labelTerpilih) {
+        labelTerpilih.textContent = ukuranAktif ? `Ukuran ${ukuranAktif}` : 'Belum dipilih';
+      }
+
+      if (tombolWa) {
+        const dasar = tombolWa.dataset.waDasar ?? '';
+        const pesanDasar = tombolWa.dataset.pesanDasar ?? '';
+        const namaSitus = tombolWa.dataset.namaSitus ?? '';
+        const namaProduk = tombolWa.dataset.namaProduk ?? '';
+        const hargaProduk = tombolWa.dataset.hargaProduk ?? '';
+
+        const pesan = ukuranAktif
+          ? `Halo ${namaSitus}, saya mau pesan "${namaProduk}" ukuran ${ukuranAktif} (${hargaProduk}). Apakah masih tersedia?`
+          : pesanDasar;
+
+        tombolWa.href = dasar + encodeURIComponent(pesan);
+      }
+    }
+
+    tombolUkuran.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const kode = btn.dataset.pilihUkuran ?? '';
+        ukuranAktif = ukuranAktif === kode ? '' : kode;
+        perbaruiTampilanUkuran();
+      });
+    });
+  </script>
 </Layout>
