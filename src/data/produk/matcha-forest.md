@@ -3,7 +3,7 @@ nama: Matcha forest
 ringkasan: Desain unik dengan perpaduan antara warna matcha dan putih sehingga memberi kesan elegant
 foto:
   - '@assets/produk/IMG_6019.jpeg'
-  - '@assets/produk/IMG_6021.jpeg'
+  - '@assets/produk/IMG_6020.jpeg'
 harga: 80000
 hargaCoret: null
 bentuk: oval
