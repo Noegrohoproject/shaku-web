@@ -11,9 +11,14 @@ panjang: pendek
 warna:
   - Hijau pink
 jumlahKuku: 10
+ukuranTersedia:
+  - XS
+  - S
+  - M
+  - L
 tersedia: true
 unggulan: true
-urutan: 100
+urutan: 5
 ---
 
 Tampil cantik tanpa perlu buang waktu dan biaya mahal ke salon. Press-on nails kami dirancang khusus menggunakan gel berkualitastinggi yang tahan lama, reusable (bisa dipakai berulang kali), dan sangat praktis dipasang sendiri dalam kurun waktu kurang dari 10 menit.
@@ -34,12 +39,9 @@ Pilihan Ukuran (Panjang & Bentuk)
 
 Cara Pemasangan
 
-1.	Bersihkan kuku asli dari minyak/kotoran menggunakan alcohol swab.
-
-2.	Dorong kutikula secara perlahan, lalu kikir halus permukaan kuku asli agar lem menempel sempurna.
-
-3.	Pilih ukuran kuku palsu yang pas, aplikasikan lem secukupnya.
-
-4.	Tempelkan kuku palsu dari arah dasar kutikula, lalu tekan tahan selama 15–30 detik.
+1. Bersihkan kuku asli dari minyak/kotoran menggunakan alcohol swab.
+2. Dorong kutikula secara perlahan, lalu kikir halus permukaan kuku asli agar lem menempel sempurna.
+3. Pilih ukuran kuku palsu yang pas, aplikasikan lem secukupnya.
+4. Tempelkan kuku palsu dari arah dasar kutikula, lalu tekan tahan selama 15–30 detik.
 
 Mau tampil stunning buat acara spesial atau sekadar harian? Yuk, tanyakan ketersediaan desain dan konsultasi ukuran kuku kamu via chat!
