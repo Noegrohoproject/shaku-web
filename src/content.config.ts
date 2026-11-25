@@ -31,6 +31,11 @@ const produk = defineCollection({
       warna: z.array(z.string()).min(1),
       /** Jumlah keping kuku dalam satu set. */
       jumlahKuku: z.number().int().positive().default(24),
+      /** Ukuran yang tersedia untuk produk ini (XS, S, M, L). */
+      ukuranTersedia: z
+        .array(z.enum(['XS', 'S', 'M', 'L']))
+        .nullish()
+        .transform((nilai) => (nilai && nilai.length > 0 ? nilai : ['XS', 'S', 'M', 'L'] as const)),
       /** Foto pertama dipakai sebagai gambar utama di katalog. */
       foto: z.array(image()).nullish().transform((nilai) => nilai ?? []),
       tersedia: z.boolean().default(true),
