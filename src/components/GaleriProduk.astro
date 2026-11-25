@@ -1,0 +1,290 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import FotoBelumTersedia from './FotoBelumTersedia.astro';
+
+interface Props {
+  foto: ImageMetadata[];
+  nama: string;
+}
+
+const { foto, nama } = Astro.props;
+const banyak = foto.length > 1;
+---
+
+<div class="space-y-3" data-galeri>
+  <div class="relative overflow-hidden bg-latar-2">
+    {
+      foto.length > 0 ? (
+        <div
+          data-galeri-jalur
+          class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {foto.map((f, i) => (
+            <div class="w-full shrink-0 snap-center" data-galeri-slide={i}>
+              <button
+                type="button"
+                data-galeri-buka={i}
+                aria-label={`Perbesar foto ${nama} ${i + 1}`}
+                class="block w-full cursor-zoom-in"
+              >
+                <Image
+                  src={f}
+                  alt={i === 0 ? `Press-on nail ${nama}` : `${nama} foto ${i + 1}`}
+                  widths={[480, 768, 1200]}
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                  loading={i === 0 ? 'eager' : 'lazy'}
+                  class="aspect-4/5 w-full object-cover"
+                />
+              </button>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="aspect-4/5">
+          <FotoBelumTersedia />
+        </div>
+      )
+    }
+
+    {
+      foto.length > 0 && (
+        <button
+          type="button"
+          data-galeri-perbesar
+          aria-label="Tampilkan layar penuh"
+          class="absolute top-3 right-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-latar/85 text-teks shadow-sm backdrop-blur-xs transition-colors hover:bg-latar"
+        >
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+          </svg>
+        </button>
+      )
+    }
+
+    {
+      banyak && (
+        <>
+          <button
+            type="button"
+            data-galeri-prev
+            aria-label="Foto sebelumnya"
+            class="absolute top-1/2 left-3 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-latar/85 text-teks shadow-sm backdrop-blur-xs transition-colors hover:bg-latar"
+          >
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            data-galeri-next
+            aria-label="Foto berikutnya"
+            class="absolute top-1/2 right-3 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-latar/85 text-teks shadow-sm backdrop-blur-xs transition-colors hover:bg-latar"
+          >
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+
+          <div
+            data-galeri-indikator
+            class="pointer-events-none absolute right-3 bottom-3 rounded-full bg-teks/70 px-2.5 py-1 text-[11px] font-medium text-latar"
+          >
+            1 / {foto.length}
+          </div>
+        </>
+      )
+    }
+  </div>
+
+  {
+    banyak && (
+      <div class="grid grid-cols-4 gap-3 sm:grid-cols-5">
+        {foto.map((f, i) => (
+          <button
+            type="button"
+            data-galeri-thumb={i}
+            aria-label={`Lihat foto ${i + 1}`}
+            class:list={[
+              'cursor-pointer overflow-hidden border bg-latar-2 transition-colors',
+              i === 0 ? 'border-aksen ring-1 ring-aksen' : 'border-garis hover:border-teks-redup',
+            ]}
+          >
+            <Image
+              src={f}
+              alt={`${nama} thumbnail ${i + 1}`}
+              widths={[200, 320]}
+              sizes="120px"
+              loading="lazy"
+              class="aspect-square w-full object-cover"
+            />
+          </button>
+        ))}
+      </div>
+    )
+  }
+</div>
+
+{
+  foto.length > 0 && (
+    <dialog
+      data-galeri-modal
+      aria-label={`Galeri ${nama}`}
+      class="fixed inset-0 z-50 m-0 h-dvh max-h-none w-dvw max-w-none bg-black/92 p-0 text-white backdrop:bg-black/90"
+    >
+      <div class="relative flex h-full w-full items-center justify-center p-4 sm:p-10">
+        <button
+          type="button"
+          data-modal-tutup
+          aria-label="Tutup layar penuh"
+          class="absolute top-4 right-4 z-10 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-white/15 text-white transition-colors hover:bg-white/25"
+        >
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+
+        {
+          banyak && (
+            <>
+              <button
+                type="button"
+                data-modal-prev
+                aria-label="Foto sebelumnya"
+                class="absolute top-1/2 left-3 z-10 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/15 text-white transition-colors hover:bg-white/25 sm:left-6"
+              >
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+
+              <button
+                type="button"
+                data-modal-next
+                aria-label="Foto berikutnya"
+                class="absolute top-1/2 right-3 z-10 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/15 text-white transition-colors hover:bg-white/25 sm:right-6"
+              >
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+
+              <div
+                data-modal-indikator
+                class="absolute bottom-5 left-1/2 -translate-x-1/2 rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-white"
+              >
+                1 / {foto.length}
+              </div>
+            </>
+          )
+        }
+
+        <img
+          data-modal-img
+          src=""
+          alt={nama}
+          class="max-h-[88dvh] max-w-full object-contain select-none"
+        />
+      </div>
+    </dialog>
+  )
+}
+
+<script>
+  const galeri = document.querySelector<HTMLElement>('[data-galeri]');
+  if (galeri) {
+    const jalur = galeri.querySelector<HTMLElement>('[data-galeri-jalur]');
+    const slides = Array.from(galeri.querySelectorAll<HTMLElement>('[data-galeri-slide]'));
+    const thumbs = Array.from(galeri.querySelectorAll<HTMLButtonElement>('[data-galeri-thumb]'));
+    const indikator = galeri.querySelector<HTMLElement>('[data-galeri-indikator]');
+    const prevBtn = galeri.querySelector<HTMLButtonElement>('[data-galeri-prev]');
+    const nextBtn = galeri.querySelector<HTMLButtonElement>('[data-galeri-next]');
+    const perbesarBtn = galeri.querySelector<HTMLButtonElement>('[data-galeri-perbesar]');
+    const bukaBtns = Array.from(galeri.querySelectorAll<HTMLButtonElement>('[data-galeri-buka]'));
+
+    const modal = document.querySelector<HTMLDialogElement>('[data-galeri-modal]');
+    const modalImg = modal?.querySelector<HTMLImageElement>('[data-modal-img]');
+    const modalIndikator = modal?.querySelector<HTMLElement>('[data-modal-indikator]');
+    const modalTutup = modal?.querySelector<HTMLButtonElement>('[data-modal-tutup]');
+    const modalPrev = modal?.querySelector<HTMLButtonElement>('[data-modal-prev]');
+    const modalNext = modal?.querySelector<HTMLButtonElement>('[data-modal-next]');
+
+    let aktif = 0;
+    const total = slides.length;
+
+    function perbaruiUI(idx: number) {
+      aktif = (idx + total) % total;
+      if (indikator) indikator.textContent = `${aktif + 1} / ${total}`;
+      if (modalIndikator) modalIndikator.textContent = `${aktif + 1} / ${total}`;
+
+      thumbs.forEach((t, i) => {
+        const sama = i === aktif;
+        t.classList.toggle('border-aksen', sama);
+        t.classList.toggle('ring-1', sama);
+        t.classList.toggle('ring-aksen', sama);
+        t.classList.toggle('border-garis', !sama);
+      });
+
+      if (modal?.open && modalImg) {
+        const img = slides[aktif]?.querySelector('img');
+        if (img) {
+          modalImg.src = img.currentSrc || img.src;
+          modalImg.alt = img.alt;
+        }
+      }
+    }
+
+    function keSlide(idx: number) {
+      if (!jalur || total === 0) return;
+      const target = (idx + total) % total;
+      jalur.scrollTo({ left: target * jalur.clientWidth, behavior: 'smooth' });
+      perbaruiUI(target);
+    }
+
+    function bukaModal(idx: number) {
+      if (!modal || !modalImg || total === 0) return;
+      perbaruiUI(idx);
+      const img = slides[aktif]?.querySelector('img');
+      if (img) {
+        modalImg.src = img.currentSrc || img.src;
+        modalImg.alt = img.alt;
+      }
+      modal.showModal();
+    }
+
+    prevBtn?.addEventListener('click', () => keSlide(aktif - 1));
+    nextBtn?.addEventListener('click', () => keSlide(aktif + 1));
+    thumbs.forEach((t, i) => t.addEventListener('click', () => keSlide(i)));
+
+    perbesarBtn?.addEventListener('click', () => bukaModal(aktif));
+    bukaBtns.forEach((b, i) => b.addEventListener('click', () => bukaModal(i)));
+
+    modalTutup?.addEventListener('click', () => modal?.close());
+    modalPrev?.addEventListener('click', () => keSlide(aktif - 1));
+    modalNext?.addEventListener('click', () => keSlide(aktif + 1));
+
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal || e.target === modal.firstElementChild) {
+        modal.close();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!modal?.open) return;
+      if (e.key === 'ArrowLeft') keSlide(aktif - 1);
+      else if (e.key === 'ArrowRight') keSlide(aktif + 1);
+    });
+
+    // Sinkronkan indikator saat pengguna menggeser (swipe) di HP
+    let scrollTimer: number | undefined;
+    jalur?.addEventListener('scroll', () => {
+      window.clearTimeout(scrollTimer);
+      scrollTimer = window.setTimeout(() => {
+        if (!jalur || jalur.clientWidth === 0) return;
+        const idx = Math.round(jalur.scrollLeft / jalur.clientWidth);
+        if (idx !== aktif) perbaruiUI(idx);
+      }, 60);
+    });
+  }
+</script>
